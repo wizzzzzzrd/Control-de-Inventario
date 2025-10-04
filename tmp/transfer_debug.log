@@ -1,0 +1,134 @@
+2025-09-23 06:54:30 -> ENTRY transfer store
+POST: {"product_id":"7","to_branch_id":"2","unit":"pieces","qty":"200"}
+BODEGA STOCK: qp=234, bc=0, factor=1, totalPieces=234
+TRANSFER REQ: qty_consumption=200, qty_purchase=NULL
+TRANSFER OK
+2025-09-23 07:21:25 -> ENTRY transfer store
+POST: {"product_id":"2","to_branch_id":"2","unit":"boxes","qty":"1"}
+BODEGA STOCK: qp=234, bc=0, factor=50, totalPieces=234
+TRANSFER REQ: qty_consumption=50, qty_purchase=1
+TRANSFER OK
+2025-09-24 06:03:10 -> ENTRY transfer store
+POST: {"product_id":"10","to_branch_id":"2","unit":"pieces","qty":"123"}
+BODEGA STOCK: qp=0, bc=0, factor=1, totalPieces=0
+TRANSFER REQ: qty_consumption=123, qty_purchase=NULL
+INSUFFICIENT STOCK
+2025-09-24 06:14:26 -> ENTRY transfer store
+POST: {"product_id":"11","to_branch_id":"2","unit":"boxes","qty":"5"}
+BODEGA STOCK: qp=0, bc=10, factor=12, totalPieces=120
+TRANSFER REQ: qty_consumption=60, qty_purchase=5
+TRANSFER OK
+2025-09-24 06:31:52 -> ENTRY transfer store
+POST: {"product_id":"10","to_branch_id":"2","unit":"pieces","qty":"56"}
+BODEGA STOCK: qp=12, bc=12, factor=12, totalPieces=156
+TRANSFER REQ: qty_consumption=56, qty_purchase=NULL
+TRANSFER OK
+2025-09-25 06:25:44 -> ENTRY transfer store
+POST: {"product_id":"13","to_branch_id":"2","unit":"boxes","qty":"1"}
+BODEGA STOCK: qp=0, bc=2, factor=24, totalPieces=48
+TRANSFER REQ: qty_consumption=24, qty_purchase=1
+TRANSFER OK
+2025-09-25 06:26:21 -> ENTRY transfer store
+POST: {"product_id":"13","to_branch_id":"2","unit":"pieces","qty":"24"}
+BODEGA STOCK: qp=0, bc=1, factor=24, totalPieces=24
+TRANSFER REQ: qty_consumption=24, qty_purchase=NULL
+TRANSFER OK
+2025-09-25 06:29:55 -> ENTRY transfer store
+POST: {"product_id":"7","to_branch_id":"2","unit":"pieces","qty":"24"}
+BODEGA STOCK: qp=12, bc=34, factor=24, totalPieces=828
+TRANSFER REQ: qty_consumption=24, qty_purchase=NULL
+DEST BEFORE: qp=200, bc=0 -> totalPiecesBefore=200
+DEST AFTER: qp_new=8, bc_new=9, totalPiecesAfter=224
+TRANSFER OK
+2025-09-25 06:30:20 -> ENTRY transfer store
+POST: {"product_id":"10","to_branch_id":"2","unit":"pieces","qty":"24"}
+BODEGA STOCK: qp=16, bc=8, factor=12, totalPieces=112
+TRANSFER REQ: qty_consumption=24, qty_purchase=NULL
+DEST BEFORE: qp=56, bc=0 -> totalPiecesBefore=56
+DEST AFTER: qp_new=8, bc_new=6, totalPiecesAfter=80
+TRANSFER OK
+2025-09-25 06:30:39 -> ENTRY transfer store
+POST: {"product_id":"10","to_branch_id":"2","unit":"boxes","qty":"1"}
+BODEGA STOCK: qp=4, bc=7, factor=12, totalPieces=88
+TRANSFER REQ: qty_consumption=12, qty_purchase=1
+DEST BEFORE: qp=8, bc=6 -> totalPiecesBefore=80
+DEST AFTER: qp_new=8, bc_new=7, totalPiecesAfter=92
+TRANSFER OK
+2025-09-26 07:08:46 -> ENTRY transfer store
+POST: {"product_id":"14","to_branch_id":"2","unit":"boxes","qty":"1"}
+BODEGA STOCK: qp=50, bc=0, factor=10, totalPieces=50
+TRANSFER REQ: qty_consumption=10, qty_purchase=1
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=0, bc_new=1, totalPiecesAfter=10
+TRANSFER OK
+2025-09-29 17:54:54 -> ENTRY transfer store
+POST: {"product_id":"17","to_branch_id":"2","unit":"pieces","qty":"12"}
+BODEGA STOCK: qp=0, bc=0, factor=1, totalPieces=0
+TRANSFER REQ: qty_consumption=12, qty_purchase=NULL
+INSUFFICIENT STOCK
+2025-09-29 17:56:22 -> ENTRY transfer store
+POST: {"product_id":"17","to_branch_id":"2","unit":"pieces","qty":"24"}
+BODEGA STOCK: qp=0, bc=8, factor=12, totalPieces=96
+TRANSFER REQ: qty_consumption=24, qty_purchase=NULL
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=0, bc_new=2, totalPiecesAfter=24
+TRANSFER OK
+2025-09-30 07:53:47 -> ENTRY transfer store
+POST: {"product_id":"18","to_branch_id":"2","unit":"boxes","qty":"2"}
+BODEGA STOCK: qp=34, bc=1, factor=12, totalPieces=46
+TRANSFER REQ: qty_consumption=24, qty_purchase=2
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=0, bc_new=2, totalPiecesAfter=24
+TRANSFER OK
+2025-10-01 06:34:51 -> ENTRY transfer store
+POST: {"product_id":"14","to_branch_id":"2","unit":"pieces","qty":"10"}
+BODEGA STOCK: qp=0, bc=4, factor=10, totalPieces=40
+TRANSFER REQ: qty_consumption=10, qty_purchase=NULL
+DEST BEFORE: qp=0, bc=1 -> totalPiecesBefore=10
+DEST AFTER: qp_new=0, bc_new=2, totalPiecesAfter=20
+TRANSFER OK
+2025-10-01 06:35:16 -> ENTRY transfer store
+POST: {"product_id":"14","to_branch_id":"2","unit":"boxes","qty":"1"}
+BODEGA STOCK: qp=0, bc=3, factor=10, totalPieces=30
+TRANSFER REQ: qty_consumption=10, qty_purchase=1
+DEST BEFORE: qp=0, bc=2 -> totalPiecesBefore=20
+DEST AFTER: qp_new=0, bc_new=3, totalPiecesAfter=30
+TRANSFER OK
+2025-10-02 06:59:28 -> ENTRY transfer store
+POST: {"product_id":"19","to_branch_id":"3","unit":"boxes","qty":"1"}
+BODEGA STOCK: qp=0, bc=0, factor=24, totalPieces=0
+TRANSFER REQ: qty_consumption=24, qty_purchase=1
+INSUFFICIENT STOCK
+2025-10-02 06:59:57 -> ENTRY transfer store
+POST: {"product_id":"19","to_branch_id":"2","unit":"pieces","qty":"12"}
+BODEGA STOCK: qp=0, bc=20, factor=24, totalPieces=480
+TRANSFER REQ: qty_consumption=12, qty_purchase=NULL
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=12, bc_new=0, totalPiecesAfter=12
+TRANSFER OK
+2025-10-02 07:00:12 -> ENTRY transfer store
+POST: {"product_id":"19","to_branch_id":"3","unit":"boxes","qty":"2"}
+BODEGA STOCK: qp=12, bc=19, factor=24, totalPieces=468
+TRANSFER REQ: qty_consumption=48, qty_purchase=2
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=0, bc_new=2, totalPiecesAfter=48
+TRANSFER OK
+2025-10-04 05:02:40 -> ENTRY transfer store
+POST: {"product_id":"20","to_branch_id":"2","unit":"pieces","qty":"23"}
+BODEGA STOCK: qp=0, bc=0, factor=12, totalPieces=0
+TRANSFER REQ: qty_consumption=23, qty_purchase=NULL
+INSUFFICIENT STOCK
+2025-10-04 05:03:44 -> ENTRY transfer store
+POST: {"product_id":"20","to_branch_id":"3","unit":"pieces","qty":"24"}
+BODEGA STOCK: qp=0, bc=20, factor=12, totalPieces=240
+TRANSFER REQ: qty_consumption=24, qty_purchase=NULL
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=0, bc_new=2, totalPiecesAfter=24
+TRANSFER OK
+2025-10-04 05:03:55 -> ENTRY transfer store
+POST: {"product_id":"20","to_branch_id":"2","unit":"pieces","qty":"12"}
+BODEGA STOCK: qp=0, bc=18, factor=12, totalPieces=216
+TRANSFER REQ: qty_consumption=12, qty_purchase=NULL
+DEST BEFORE: qp=0, bc=0 -> totalPiecesBefore=0
+DEST AFTER: qp_new=0, bc_new=1, totalPiecesAfter=12
+TRANSFER OK

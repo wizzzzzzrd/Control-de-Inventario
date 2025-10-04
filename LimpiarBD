@@ -1,0 +1,89 @@
+-- ---------------------------------------------------------
+-- Script: Vaciar base de datos "inventario" usando DELETE
+-- NO toca la tabla `roles`
+-- ---------------------------------------------------------
+
+-- Opcional: iniciar transacción
+START TRANSACTION;
+
+-- Desactivar comprobaciones FK para evitar errores por constraints
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- BORRAR datos (orden lógico: hijos -> padres)
+DELETE FROM `order_items`;
+DELETE FROM `orders`;
+
+DELETE FROM `bodega_note_items`;
+DELETE FROM `bodega_notes`;
+
+DELETE FROM `branch_request_items`;
+DELETE FROM `branch_requests`;
+
+DELETE FROM `inventory_counts`;
+DELETE FROM `inventory_sessions`;
+
+DELETE FROM `product_branch_stock`;
+DELETE FROM `stock_movements`;
+DELETE FROM `transfers`;
+
+DELETE FROM `products`;
+
+DELETE FROM `users`;
+
+DELETE FROM `branches`;
+
+DELETE FROM `audits`;
+
+-- Si tienes tablas adicionales no listadas en el volcado,
+-- agrégalas aquí con DELETE FROM `otra_tabla`;
+
+-- RESETear AUTO_INCREMENT para que los IDs empiecen en 1
+ALTER TABLE `order_items`            AUTO_INCREMENT = 1;
+ALTER TABLE `orders`                 AUTO_INCREMENT = 1;
+
+ALTER TABLE `bodega_note_items`      AUTO_INCREMENT = 1;
+ALTER TABLE `bodega_notes`           AUTO_INCREMENT = 1;
+
+ALTER TABLE `branch_request_items`   AUTO_INCREMENT = 1;
+ALTER TABLE `branch_requests`        AUTO_INCREMENT = 1;
+
+ALTER TABLE `inventory_counts`       AUTO_INCREMENT = 1;
+ALTER TABLE `inventory_sessions`     AUTO_INCREMENT = 1;
+
+ALTER TABLE `product_branch_stock`   AUTO_INCREMENT = 1;
+ALTER TABLE `stock_movements`        AUTO_INCREMENT = 1;
+ALTER TABLE `transfers`              AUTO_INCREMENT = 1;
+
+ALTER TABLE `products`               AUTO_INCREMENT = 1;
+
+ALTER TABLE `users`                  AUTO_INCREMENT = 1;
+
+ALTER TABLE `branches`               AUTO_INCREMENT = 1;
+
+ALTER TABLE `audits`                 AUTO_INCREMENT = 1;
+
+-- NO tocar `roles` (se conserva tal cual)
+
+-- Reactivar comprobaciones FK
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- Confirmar cambios
+COMMIT;
+
+-- Opcional: optimizar tablas (libera espacio, reconstruye índices)
+-- (Descomenta si lo deseas)
+-- OPTIMIZE TABLE `order_items`;
+-- OPTIMIZE TABLE `orders`;
+-- OPTIMIZE TABLE `bodega_note_items`;
+-- OPTIMIZE TABLE `bodega_notes`;
+-- OPTIMIZE TABLE `branch_request_items`;
+-- OPTIMIZE TABLE `branch_requests`;
+-- OPTIMIZE TABLE `inventory_counts`;
+-- OPTIMIZE TABLE `inventory_sessions`;
+-- OPTIMIZE TABLE `product_branch_stock`;
+-- OPTIMIZE TABLE `stock_movements`;
+-- OPTIMIZE TABLE `transfers`;
+-- OPTIMIZE TABLE `products`;
+-- OPTIMIZE TABLE `users`;
+-- OPTIMIZE TABLE `branches`;
+-- OPTIMIZE TABLE `audits`;

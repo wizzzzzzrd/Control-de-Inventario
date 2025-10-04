@@ -1,0 +1,415 @@
+2025-09-23 05:52:48 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"23"}
+
+Parsed: product_id=2, unit=pieces, qty=23, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=23, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=23, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 05:59:56 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"12"}
+
+Parsed: product_id=2, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=12, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=12, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:00:30 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"12"}
+
+Parsed: product_id=2, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=12, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=12, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:02:51 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"2","unit":"pieces","qty":"23"}
+
+Parsed: product_id=2, unit=pieces, qty=23, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=23, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=23, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:03:07 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"2","unit":"pieces","qty":"23"}
+
+Parsed: product_id=2, unit=pieces, qty=23, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=23, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=23, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:03:18 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"345"}
+
+Parsed: product_id=2, unit=pieces, qty=345, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=345, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=345, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:16:46 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"2"}
+
+Parsed: product_id=2, unit=pieces, qty=2, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=2, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=2, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:19:38 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"123"}
+
+Parsed: product_id=2, unit=pieces, qty=123, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=123, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=123, bc=0
+Upsert product_branch_stock OK
+EXCEPTION: Cannot add or update a child row: a foreign key constraint fails (`inventario`.`stock_movements`, CONSTRAINT `stock_movements_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL)
+2025-09-23 06:54:02 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"7","unit":"pieces","qty":"234"}
+
+Parsed: product_id=7, unit=pieces, qty=234, user_id=1
+Bodega ID: 1
+Producto factor: 1
+Converted: qty_consumption=234, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=234, bc=0
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-23 07:13:49 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"1","unit":"boxes","qty":"24"}
+
+Parsed: product_id=1, unit=boxes, qty=24, user_id=1
+Bodega ID: 1
+Producto factor: 1
+Converted: qty_consumption=24, qty_purchase=24
+Transaction started
+Current bodega qp=10, bc=3
+New bodega values qp=10, bc=27
+Upsert product_branch_stock OK
+2025-09-23 07:16:47 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"2","unit":"pieces","qty":"234"}
+
+Parsed: product_id=2, unit=pieces, qty=234, user_id=1
+Bodega ID: 1
+Producto factor: 50
+Converted: qty_consumption=234, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=234, bc=0
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-23 07:17:30 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"7","unit":"pieces","qty":"12"}
+
+Parsed: product_id=7, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 1
+Converted: qty_consumption=12, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=34
+New bodega values qp=12, bc=34
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-24 06:03:24 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"10","unit":"boxes","qty":"12"}
+
+Parsed: product_id=10, unit=boxes, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 1
+Converted: qty_consumption=12, qty_purchase=12
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=12
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-24 06:13:58 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"11","unit":"boxes","qty":"10"}
+
+Parsed: product_id=11, unit=boxes, qty=10, user_id=1
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=120, qty_purchase=10
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=10
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-24 06:24:30 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"10","unit":"pieces","qty":"12"}
+
+Parsed: product_id=10, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 1
+Converted: qty_consumption=12, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=12
+New bodega values qp=12, bc=12
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-24 06:40:52 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"11","unit":"pieces","qty":"12"}
+
+Parsed: product_id=11, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=12, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=5
+New bodega values qp=12, bc=5
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-24 06:42:16 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"12","unit":"boxes","qty":"23"}
+
+Parsed: product_id=12, unit=boxes, qty=23, user_id=1
+Bodega ID: 1
+Producto factor: 24
+Converted: qty_consumption=552, qty_purchase=23
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=23
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-24 06:48:07 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store","debug":"1"}
+POST: {"product_id":"12","unit":"pieces","qty":"12"}
+
+Parsed: product_id=12, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 24
+Bloqueado: producto secundario fuera de domingo. type=secundario
+2025-09-24 06:51:04 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"12","unit":"pieces","qty":"12"}
+
+Parsed: product_id=12, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 24
+Bloqueado: producto secundario fuera de domingo. type=secundario
+2025-09-24 06:51:14 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"10","unit":"pieces","qty":"12"}
+
+Parsed: product_id=10, unit=pieces, qty=12, user_id=1
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=12, qty_purchase=NULL
+Transaction started
+Current bodega qp=4, bc=8
+New bodega values qp=16, bc=8
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-25 06:25:26 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"13","unit":"boxes","qty":"2"}
+
+Parsed: product_id=13, unit=boxes, qty=2, user_id=1
+Bodega ID: 1
+Producto factor: 24
+Converted: qty_consumption=48, qty_purchase=2
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=2
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-26 07:07:59 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"14","unit":"pieces","qty":"50"}
+
+Parsed: product_id=14, unit=pieces, qty=50, user_id=1
+Bodega ID: 1
+Producto factor: 10
+Converted: qty_consumption=50, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=50, bc=0
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-29 17:55:33 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"17","unit":"boxes","qty":"8"}
+
+Parsed: product_id=17, unit=boxes, qty=8, user_id=1
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=96, qty_purchase=8
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=8
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-30 07:51:46 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"18","unit":"boxes","qty":"1"}
+
+Parsed: product_id=18, unit=boxes, qty=1, user_id=1
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=12, qty_purchase=1
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=1
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-09-30 07:52:37 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"18","unit":"pieces","qty":"34"}
+
+Parsed: product_id=18, unit=pieces, qty=34, user_id=1
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=34, qty_purchase=NULL
+Transaction started
+Current bodega qp=0, bc=1
+New bodega values qp=34, bc=1
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-10-02 06:59:41 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"19","unit":"boxes","qty":"20"}
+
+Parsed: product_id=19, unit=boxes, qty=20, user_id=1
+Bodega ID: 1
+Producto factor: 24
+Converted: qty_consumption=480, qty_purchase=20
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=20
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
+2025-10-04 05:03:31 -> ENTRY reception store
+REQUEST_METHOD: POST
+GET: {"url":"reception\/store"}
+POST: {"product_id":"20","unit":"boxes","qty":"20"}
+
+Parsed: product_id=20, unit=boxes, qty=20, user_id=4
+Bodega ID: 1
+Producto factor: 12
+Converted: qty_consumption=240, qty_purchase=20
+Transaction started
+Current bodega qp=0, bc=0
+New bodega values qp=0, bc=20
+Upsert product_branch_stock OK
+Inserted stock_movements receipt OK
+Transaction committed
+DONE OK
+
